@@ -12,7 +12,7 @@ public class TicTacToe extends Frame implements ActionListener {
 
     public TicTacToe() {
         setTitle("Tic Tac Toe");
-        setSize(300, 300);
+        setSize(500, 500);
         setLayout(new GridLayout(4, 3));
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent windowEvent) {
@@ -52,7 +52,7 @@ public class TicTacToe extends Frame implements ActionListener {
 
         if (isPlayer1Turn) {
             clickedButton.setLabel("X");
-            statusLabel.setText("Player 2's turn");
+            statusLabel.setText("Your  turn");
         } else {
             clickedButton.setLabel("O");
             statusLabel.setText("Player 1's turn");
